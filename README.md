@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# 🤖 Chatbot
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple, customizable, and sleek chatbot application built with **React** and powered by the **Google Gemini API**. This project allows you to create a personalized chat experience by defining your bot's personality and interacting with it in a clean, modern interface.
 
-## Available Scripts
+![<img width="1492" height="864" alt="image" src="https://github.com/user-attachments/assets/4e5cc5b1-6724-428f-a4a7-70d2412d1f3b" />
+]
 
-In the project directory, you can run:
+***
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   **Powered by Gemini:** Leverages the powerful and versatile Gemini 1.5 Flash model for intelligent and context-aware responses.
+-   **Customizable Personality:** Easily define your chatbot's name, personality, and instructions directly in the code.
+-   **Markdown Support:** Renders the bot's responses in Markdown, allowing for rich formatting like lists, bold text, code blocks, and more.
+-   **Easy Setup:** Get up and running in minutes with just a few configuration steps.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+***
 
-### `npm test`
+## 📂 Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Here are the key files you'll need to work with:
 
-### `npm run build`
+mybot/
+├── .env                  # <--- Create this file for your API key
+├── package.json
+└── src/
+├── App.css           # --- Styles for the chatbot UI
+├── App.js            # --- Main chatbot logic and configuration
+***
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Follow these steps to set up and run the project on your local machine.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **Prerequisites**
 
-### `npm run eject`
+Make sure you have [Node.js](https://nodejs.org/) and npm installed on your system.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### **Step 1: Clone the Repository**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+First, clone this repository to your local machine.
+git clone <https://github.com/justinroy-01/chatbot>
+cd mybot
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **Step 2: Dependencies**
+npm install @google/generative-ai react-markdown
+(Note: If other dependencies from package.json are not installed, you may need to run npm install first.)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### **Step 3: Get Your Gemini API Key**
+You need a Google Gemini API key to use the chatbot. You can get one for free from the Google AI Studio.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Go to Google AI Studio.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Click the "Create API key in new project" button and copy your new key.
 
-### Code Splitting
+### **Step 4: Set Up Your Environment File**
+In the root directory of the project (mybot/), create a new file named .env.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Open the .env file and add your API key in the following format. The REACT_APP_ prefix is crucial for it to work with Create React App.
 
-### Analyzing the Bundle Size
+File: mybot/.env
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+REACT_APP_GEMINI_API_KEY=PASTE_YOUR_GEMINI_API_KEY_HERE
