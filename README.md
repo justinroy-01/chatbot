@@ -22,7 +22,7 @@ A simple, customizable, and sleek chatbot application built with **React** and p
 Here are the key files you'll need to work with:
 
 mybot/
-├── .env                  # <--- Create this file for your API key
+├── .env                  #---- your API key
 ├── package.json
 └── src/
 ├── App.css           # --- Styles for the chatbot UI
@@ -41,7 +41,6 @@ Make sure you have [Node.js](https://nodejs.org/) and npm installed on your syst
 
 First, clone this repository to your local machine.
 git clone <https://github.com/justinroy-01/chatbot>
-cd mybot
 
 ### **Step 2: Dependencies**
 npm install @google/generative-ai react-markdown
@@ -61,5 +60,23 @@ In the root directory of the project (mybot/), create a new file named .env.
 Open the .env file and add your API key in the following format. The REACT_APP_ prefix is crucial for it to work with Create React App.
 
 File: mybot/.env
+<img width="1040" height="500" alt="image" src="https://github.com/user-attachments/assets/f37f0baf-9a3d-4014-8014-a934c2833539" />
+
 
 REACT_APP_GEMINI_API_KEY=PASTE_YOUR_GEMINI_API_KEY_HERE
+
+### **Step 5: Set Up Your Name and bot profile**
+Go to the below location and find your user and personality.
+
+File:mybot/App.js
+
+<img width="1305" height="462" alt="image" src="https://github.com/user-attachments/assets/eb539bd3-4988-4ea9-9371-4c9c5b0064d0" />
+
+
+### **Step 6: (Optional) setting your model**
+You can choose from a variety of Gemini model 
+just insert in App.js
+<img width="1098" height="337" alt="image" src="https://github.com/user-attachments/assets/78cb9faa-6055-4e92-ba9d-b1078ca91411" />
+
+### Hope this was helpful!!
+
