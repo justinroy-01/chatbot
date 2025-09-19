@@ -3,12 +3,8 @@
 A simple, customizable, and sleek chatbot application built with **React** and powered by the **Google Gemini API**. This project allows you to create a personalized chat experience by defining your bot's personality and interacting with it in a clean, modern interface.
 
 ## Preview
+<img width="1677" height="963" alt="image" src="https://github.com/user-attachments/assets/f857e137-b6ed-4634-9e86-0023b8b059ce" />
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/4e5cc5b1-6724-428f-a4a7-70d2412d1f3b" alt="App Preview" width="800">
-</p>
-
-]
 
 ***
 
